@@ -115,3 +115,14 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 605ms (Views: 587.2ms | ActiveRecord: 0.9ms)
 
 
+Started POST "/posts" for 76.124.168.60 at 2020-06-09 08:16:09 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iIimJqR318c30A7Qcd5S8tBzWXWRnchVeBjTNkxPG8vTASq1HnaoVe665N2pARJg6v+BJ2kDingBa7P7mS0u3w==", "title"=>"first blog post", "description"=>"vlog rules for the community....", "commit"=>"Submit Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "first blog post"], ["description", "vlog rules for the community...."], ["created_at", "2020-06-09 08:16:10.127693"], ["updated_at", "2020-06-09 08:16:10.127693"]]
+  [1m[35m (15.4ms)[0m  [1m[36mcommit transaction[0m
+No template found for PostsController#create, rendering head :no_content
+Completed 204 No Content in 59ms (ActiveRecord: 16.9ms)
+
+
