@@ -140,3 +140,14 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 430ms (Views: 404.9ms | ActiveRecord: 1.0ms)
 
 
+Started POST "/posts" for 76.124.168.60 at 2020-06-09 08:24:58 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z4AkRS31KFxFkYZSocFnQj9NG+LRX1taZGzqdhP1uvWUCajWl/RXzpz7bF95HifQBcHDsCnBGXcdH4q7xpeP4Q==", "title"=>"My second Blog Posting", "description"=>"How do I love thee...oh let me count the ways...", "commit"=>"Submit Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "My second Blog Posting"], ["description", "How do I love thee...oh let me count the ways..."], ["created_at", "2020-06-09 08:24:59.229596"], ["updated_at", "2020-06-09 08:24:59.229596"]]
+  [1m[35m (13.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://159.89.235.135:60134/posts/6
+Completed 302 Found in 46ms (ActiveRecord: 15.0ms)
+
+
